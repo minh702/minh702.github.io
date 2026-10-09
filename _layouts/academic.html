@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | escape }} | {{ site.title | escape }}</title>
+  <meta name="description" content="{{ site.description | strip_newlines | escape }}">
+  <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <nav aria-label="Main navigation">
+    <a href="{{ '/' | relative_url }}" {% if page.nav == 'cv' %}aria-current="page"{% endif %}>Academic CV</a>
+    <a href="{{ '/publications/' | relative_url }}" {% if page.nav == 'publications' %}aria-current="page"{% endif %}>Publications</a>
+  </nav>
+</header>
+<div class="site-shell">
+  <aside class="sidebar">
+    <div class="profile-identity">
+    <a class="identity" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <img class="profile-photo" src="{{ '/assets/images/min-hyung-kee.jpg' | relative_url }}" alt="Min Hyung Kee" width="1800" height="2317">
+    </div>
+    <p class="profile-bio">I received my Ph.D. from Korea University, advised by <a href="https://media.korea.ac.kr/people/jhan/">JungHyun Han</a> and <a href="https://perso.telecom-paristech.fr/kum/">Kiwon Um</a>. My research centers on physics-based simulation. My past work includes fluid and deformable solid simulation. Building on this foundation, I am also interested in applications such as differentiable simulation for robotic control.</p>
+    <div class="sidebar-contact"><a href="mailto:{{ site.email }}">{{ site.email }}</a><a href="https://github.com/minh702">GitHub <span aria-hidden="true">↗</span></a></div>
+  </aside>
+  <main id="main">{{ content }}</main>
+</div>
+</body>
+</html>

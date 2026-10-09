@@ -1,0 +1,40 @@
+- title: Implicit velocity projection method for incompressible SPH fluids
+  year: 2026
+  authors: '**Min Hyung Kee**, Jinhyung Ahn, Sehyun Park, Kiwon Um, and JungHyun Han'
+  venue: ACM Conference Papers · 11 pages · Accepted
+  conference: SIGGRAPH Asia 2026
+  doi: https://doi.org/10.1145/3829340.3842220
+  conference_dates: December 1–4, 2026
+  location: Kuala Lumpur, Malaysia
+  thumbnail: /assets/images/publication-placeholder.svg
+- title: Momentum-preserving inversion alleviation for elastic material simulation
+  year: 2024
+  authors: Heejo Jeong, Seung-wook Kim, JaeHyun Lee, Kiwon Um, **Min Hyung Kee**, and JungHyun Han
+  venue: Computer Animation and Virtual Worlds, 35(3), e2249
+  conference: CASA 2024
+  doi: https://doi.org/10.1002/cav.2249
+  thumbnail: /assets/images/publication-placeholder.svg
+- title: Inversion alleviation for stable elastic body simulation
+  year: 2023
+  authors: JaeHyun Lee, Seung-wook Kim, Kiwon Um, **Min Hyung Kee**, and JungHyun Han
+  venue: Computer Animation and Virtual Worlds, 34(3–4), e2183
+  conference: CASA 2023
+  doi: https://doi.org/10.1002/cav.2183
+  thumbnail: /assets/images/publication-placeholder.svg
+- title: An Optimization-based SPH Solver for Simulation of Hyperelastic Solids
+  year: 2023
+  authors: '**Min Hyung Kee**, Kiwon Um, HyunMo Kang, and JungHyun Han'
+  venue: Computer Graphics Forum, 42(2), 225–233
+  conference: Eurographics 2023
+  code: https://github.com/InteractiveComputerGraphics/SPlisHSPlasH
+  doi: https://doi.org/10.1111/cgf.14756
+  pdf: /file/an-optimization-based-SPH-solid-solver.pdf
+  thumbnail: /assets/images/publication-placeholder.svg
+- title: 'Constrained Projective Dynamics: Real-Time Simulation of Deformable Objects with Energy-Momentum Conservation'
+  year: 2021
+  authors: '**Min Hyung Kee**, Kiwon Um, WooSeok Jeong, and JungHyun Han'
+  venue: ACM Transactions on Graphics, 40(4), Article 160
+  conference: SIGGRAPH 2021
+  doi: https://doi.org/10.1145/3450626.3459878
+  pdf: /file/constrained_projective_dynamics.pdf
+  thumbnail: /assets/images/publication-placeholder.svg

@@ -1,0 +1,19 @@
+---
+layout: academic
+title: Publications
+nav: publications
+permalink: /publications/
+---
+<h1 class="sr-only">Publications</h1>
+{% assign groups = site.data.publications | group_by: 'year' %}
+{% for group in groups %}
+<section class="publication-year" aria-labelledby="year-{{ group.name }}">
+<h2 id="year-{{ group.name }}">{{ group.name }}</h2>
+{% for paper in group.items %}
+<article class="publication">
+  <img class="publication-thumbnail" src="{{ paper.thumbnail | default: '/assets/images/publication-placeholder.svg' | relative_url }}" alt="{% if paper.thumbnail contains 'placeholder' or paper.thumbnail == nil %}Thumbnail placeholder{% else %}{{ paper.title | escape }} — research thumbnail{% endif %}" width="240" height="180" loading="lazy">
+  <div class="publication-info"><p class="conference">{{ paper.conference }}</p><h3>{% if paper.doi %}<a href="{{ paper.doi }}">{{ paper.title }}</a>{% else %}{{ paper.title }}{% endif %}</h3><div class="authors">{{ paper.authors | markdownify }}</div><p class="venue">{{ paper.venue }}</p>{% if paper.doi or paper.code %}<div class="paper-links">{% if paper.doi %}<a href="{{ paper.doi }}">DOI <span aria-hidden="true">↗</span></a>{% endif %}{% if paper.code %}<a href="{{ paper.code }}" aria-label="Code on GitHub: {{ paper.title | escape }}">Code <span aria-hidden="true">↗</span></a>{% endif %}</div>{% endif %}</div>
+</article>
+{% endfor %}
+</section>
+{% endfor %}
