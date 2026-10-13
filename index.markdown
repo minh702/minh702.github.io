@@ -4,6 +4,13 @@ title: Academic CV
 nav: cv
 ---
 <h1 class="sr-only">Academic CV</h1>
+<section class="cv-section news-section" aria-labelledby="news-title">
+  <h2 id="news-title">News</h2>
+  <ul class="news-list">
+    <li>Our paper, <a href="/implicit-velocity-projection/">Implicit velocity projection method for incompressible SPH fluids</a>, has been accepted to SIGGRAPH Asia 2026 Conference Papers.</li>
+    <li>I have been awarded the Hi! Paris Postdoctoral Fellowship and will join Télécom Paris in December 2026.</li>
+  </ul>
+</section>
 <section class="cv-section experience-section" aria-labelledby="experience-title">
   <h2 id="experience-title">Work Experience</h2>
   <div class="education-row">
