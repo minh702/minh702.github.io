@@ -1,4 +1,5 @@
 - title: Implicit velocity projection method for incompressible SPH fluids
+  project: /implicit-velocity-projection/
   year: 2026
   authors: '**Min Hyung Kee**, Jinhyung Ahn, Sehyun Park, Kiwon Um, and JungHyun Han'
   venue: ACM Conference Papers · 11 pages · Accepted
