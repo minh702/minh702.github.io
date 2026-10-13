@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Implicit velocity projection method for incompressible SPH fluids — research project and simulation demonstrations.">
+  <meta name="theme-color" content="#faf9f6">
+  <title>Implicit velocity projection method for incompressible SPH fluids</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar"><a class="wordmark" href="#">Implicit velocity projection<span class="dot"></span></a><nav aria-label="Main"><a href="#demo">Film</a></nav></header>
+  <main id="main">
+    <section class="intro" aria-labelledby="title">
+      <p class="eyebrow">Research project</p>
+      <h1 id="title">Implicit velocity projection method for incompressible SPH fluids</h1>
+      <ul class="authors" aria-label="Authors">
+        <li><a href="https://minh702.github.io/">Min Hyung Kee</a><sup>1</sup></li><li>Jinhyung Ahn<sup>2</sup></li><li><a href="https://shpark0810.github.io/">Sehyun Park</a><sup>1</sup></li><li><a href="https://perso.telecom-paristech.fr/kum/">Kiwon Um</a><sup>3</sup></li><li><a href="https://media.korea.ac.kr/people/jhan/">JungHyun Han</a><sup>1</sup></li>
+      </ul>
+      <p class="affiliations"><span><sup>1</sup> Korea University</span><span><sup>2</sup> Yonsei University</span><span><sup>3</sup> LTCI, Telecom Paris, IP Paris</span></p>
+      <div class="links"><a class="button" id="paper-link" href="assets/sa26conference-ivp.pdf" download="sa26conference-ivp.pdf">PDF(low-res)</a><a class="button" id="code-link" hidden>Code ↗</a></div>
+    </section>
+    <figure class="hero">
+      <img src="assets/sa26-thumbnail.jpg" width="6496" height="1182" alt="Five stages of the Hollow Tree fluid simulation, from an initial column to a branching tree and its collapse">
+      <figcaption><span><strong>Hollow Tree.</strong> Fluid fills in a complex boundary, involving 978K fluid and 1.75M boundary particles. Given a tight density error tolerance of 0.01%, our solver resolves each frame of this challenging scenario in fewer than 5 iterations, each of which involves an inner linear system solver for the subproblem.</span></figcaption>
+    </figure>
+    <section class="section abstract" id="abstract" aria-labelledby="abstract-heading">
+      <h2 id="abstract-heading">Abstract</h2>
+      <p>Enforcing incompressibility has been extensively studied in smoothed particle hydrodynamics (SPH) fluid simulation. A variety of methods have been developed to this end, particularly based on implicit formulations to ensure stability and efficiency, which results in iterative pressure solvers. However, these iterative solvers, typically adopting the projected relaxed Jacobi (PRJ) method for the constant density constraint, suffer from slow convergence, mainly due to under-relaxation required for stability. In this paper, we interpret the PRJ iteration as an explicit fixed-point update that projects velocity onto the constraint manifold, and propose its implicit counterpart, the <em>implicit velocity projection</em> method. Our method enables significant over-relaxation, which leads to fast convergence while maintaining robustness, thereby achieving substantial performance gains. Our comprehensive experiments, including studies on different solvers with varying relaxation parameters, timestep sizes, density-error tolerances, and scene scales, demonstrate the superiority of our method over standard SPH methods.</p>
+    </section>
+    <section class="section" id="demo" aria-labelledby="demo-heading">
+      <div class="section-heading"><div><h2 id="demo-heading">Video</h2></div></div>
+      <div class="video-frame">
+        <iframe id="demo-video" title="Research demonstration: implicit velocity projection for incompressible SPH fluids" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen hidden></iframe>
+        <div id="video-placeholder"><img src="assets/sa26-thumbnail.jpg" width="6496" height="1182" alt="Five snapshots of the Hollow Tree simulation"><div><span class="eyebrow">Full demonstration</span><p>Video coming soon</p></div></div>
+      </div>
+      <nav class="chapters" aria-label="Video chapters" hidden><a href="#demo" data-time="7"><span>00:07</span>Hollow Tree</a><a href="#demo" data-time="57"><span>00:57</span>Fluid Pillar</a><a href="#demo" data-time="80"><span>01:20</span>Dam Break</a><a href="#demo" data-time="110"><span>01:50</span>Stack</a><a href="#demo" data-time="145"><span>02:25</span>Scalability</a><a href="#demo" data-time="165"><span>02:45</span>Small Fluid Pillar</a></nav>
+      
+    </section>
+    <section class="section" id="citation" aria-labelledby="citation-heading"><h2 id="citation-heading">BibTeX</h2><pre class="draft-placeholder">Citation details will be added after the publication information is confirmed.</pre></section>
+  </main>
+  <footer><span>Layout inspired by the <a href="https://xingbaji.github.io/PNCG_project_page/">PNCG project page</a>.</span><a href="#">Back to top ↑</a></footer>
+</body>
+</html>
