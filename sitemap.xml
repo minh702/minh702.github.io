@@ -6,4 +6,6 @@ permalink: /sitemap.xml
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>{{ '/' | absolute_url | xml_escape }}</loc></url>
   <url><loc>{{ '/publications/' | absolute_url | xml_escape }}</loc></url>
+  <url><loc>{{ '/optimization-based-sph-solids/' | absolute_url | xml_escape }}</loc></url>
+  <url><loc>{{ '/constrained-projective-dynamics/' | absolute_url | xml_escape }}</loc></url>
 </urlset>

@@ -11,7 +11,7 @@ permalink: /publications/
 <h2 id="year-{{ group.name }}">{{ group.name }}</h2>
 {% for paper in group.items %}
 <article class="publication">
-  <div class="publication-info"><h3>{% if paper.project %}<a href="{{ paper.project | relative_url }}">{{ paper.title }}</a>{% elsif paper.doi %}<a href="{{ paper.doi }}">{{ paper.title }}</a>{% else %}{{ paper.title }}{% endif %}</h3><div class="authors">{{ paper.authors | markdownify }}</div><p class="venue">{{ paper.conference }}</p>{% unless paper.project %}{% if paper.code %}<div class="paper-links">{% if paper.code %}<a href="{{ paper.code }}" aria-label="Code on GitHub: {{ paper.title | escape }}">Code <span aria-hidden="true">↗</span></a>{% endif %}</div>{% endif %}{% endunless %}</div>
+  <div class="publication-info"><h3>{% if paper.project %}<a href="{% if paper.project contains '://' %}{{ paper.project | escape }}{% else %}{{ paper.project | relative_url }}{% endif %}">{{ paper.title }}</a>{% elsif paper.doi %}<a href="{{ paper.doi }}">{{ paper.title }}</a>{% else %}{{ paper.title }}{% endif %}</h3><div class="authors">{{ paper.authors | markdownify }}</div><p class="venue">{{ paper.conference }}</p>{% unless paper.project %}{% if paper.code %}<div class="paper-links">{% if paper.code %}<a href="{{ paper.code }}" aria-label="Code on GitHub: {{ paper.title | escape }}">Code <span aria-hidden="true">↗</span></a>{% endif %}</div>{% endif %}{% endunless %}</div>
 </article>
 {% endfor %}
 </section>

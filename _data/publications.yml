@@ -16,6 +16,7 @@
   doi: https://doi.org/10.1002/cav.2249
   thumbnail: /assets/images/publication-placeholder.svg
 - title: Inversion alleviation for stable elastic body simulation
+  project: https://www.leejaehyun179.com/publications/inversion1
   year: 2023
   authors: JaeHyun Lee, Seung-wook Kim, Kiwon Um, **Min Hyung Kee**, and JungHyun Han
   venue: Computer Animation and Virtual Worlds, 34(3–4), e2183
@@ -23,6 +24,7 @@
   doi: https://doi.org/10.1002/cav.2183
   thumbnail: /assets/images/publication-placeholder.svg
 - title: An Optimization-based SPH Solver for Simulation of Hyperelastic Solids
+  project: /optimization-based-sph-solids/
   year: 2023
   authors: '**Min Hyung Kee**, Kiwon Um, HyunMo Kang, and JungHyun Han'
   venue: Computer Graphics Forum, 42(2), 225–233
@@ -32,6 +34,7 @@
   pdf: /file/an-optimization-based-SPH-solid-solver.pdf
   thumbnail: /assets/images/publication-placeholder.svg
 - title: 'Constrained Projective Dynamics: Real-Time Simulation of Deformable Objects with Energy-Momentum Conservation'
+  project: /constrained-projective-dynamics/
   year: 2021
   authors: '**Min Hyung Kee**, Kiwon Um, WooSeok Jeong, and JungHyun Han'
   venue: ACM Transactions on Graphics, 40(4), Article 160

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="An optimization-based SPH solver for stable simulation of hyperelastic solids and solid-fluid coupling. Eurographics 2023.">
+  <meta name="theme-color" content="#ffffff">
+  <title>An Optimization-based SPH Solver for Simulation of Hyperelastic Solids</title>
+  <link rel="canonical" href="https://minh702.github.io/optimization-based-sph-solids/">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <main id="main">
+    <section class="intro" aria-labelledby="title">
+      <h1 id="title">An Optimization-based SPH Solver for Simulation of Hyperelastic Solids</h1>
+      <p class="venue">Eurographics 2023 · Computer Graphics Forum</p>
+      <ul class="authors" aria-label="Authors">
+        <li><a href="https://minh702.github.io/">Min Hyung Kee</a><sup>1</sup></li>
+        <li><a href="https://perso.telecom-paristech.fr/kum/">Kiwon Um</a><sup>2</sup></li>
+        <li>HyunMo Kang<sup>1</sup></li>
+        <li><a href="https://media.korea.ac.kr/people/jhan/">JungHyun Han</a><sup>1</sup></li>
+      </ul>
+      <p class="affiliations"><span><sup>1</sup> Korea University, Korea</span><span><sup>2</sup> LTCI, Telecom Paris, IP Paris, France</span></p>
+      <div class="links">
+        <a class="button" href="https://github.com/InteractiveComputerGraphics/SPlisHSPlasH">Code ↗</a>
+        <a class="button" href="https://doi.org/10.1111/cgf.14756">DOI ↗</a>
+      </div>
+    </section>
+    <figure class="hero">
+      <img src="assets/solid-fluid-coupling.png" width="1762" height="495" alt="Two snapshots of red and yellow hyperelastic solids interacting with blue fluid particles in a tank">
+      <figcaption>Our optimization-based solver allows stable and robust simulations of coupling between hyperelastic solids and fluids in a unified SPH framework. The elastic solids of this example are simulated using the Neo-Hookean model with 39.3K particles, and the fluid is simulated using the divergence-free SPH solver with 320K particles.</figcaption>
+    </figure>
+    <section class="section abstract" id="abstract" aria-labelledby="abstract-heading">
+      <h2 id="abstract-heading">Abstract</h2>
+      <p>This paper proposes a novel method for simulating hyperelastic solids with Smoothed Particle Hydrodynamics (SPH). The proposed method extends the coverage of the state-of-the-art elastic SPH solid method to include different types of hyperelastic materials, such as the Neo-Hookean and the St. Venant-Kirchoff models. To this end, we reformulate an implicit integration scheme for SPH elastic solids into an optimization problem and solve the problem using a general-purpose quasi-Newton method. Our experiments show that the Limited-memory BFGS (L-BFGS) algorithm can be employed to efficiently solve our optimization problem in the SPH framework and demonstrate its stable and efficient simulations for complex materials in the SPH framework. Thanks to the nature of our unified representation for both solids and fluids, the SPH formulation simplifies coupling between different materials and handling collisions.</p>
+    </section>
+    <section class="section" id="demo" aria-labelledby="demo-heading">
+      <div class="section-heading"><h2 id="demo-heading">Video</h2></div>
+      <div class="video-frame">
+        <iframe src="https://www.youtube-nocookie.com/embed/GQ0K_FFV7hY?rel=0" title="Research demonstration: An Optimization-based SPH Solver for Simulation of Hyperelastic Solids" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <p class="video-note"><a href="https://www.youtube.com/watch?v=GQ0K_FFV7hY">Watch on YouTube ↗</a></p>
+    </section>
+    <section class="section" id="citation" aria-labelledby="citation-heading">
+      <h2 id="citation-heading">BibTeX</h2>
+      <pre class="bibtex"><code>@article{kee2023optimization,
+  author = {Kee, Min Hyung and Um, Kiwon and Kang, HyunMo and Han, JungHyun},
+  title = {An Optimization-based {SPH} Solver for Simulation of Hyperelastic Solids},
+  journal = {Computer Graphics Forum},
+  year = {2023},
+  volume = {42},
+  number = {2},
+  pages = {225--233},
+  doi = {10.1111/cgf.14756},
+  url = {https://doi.org/10.1111/cgf.14756}
+}</code></pre>
+    </section>
+  </main>
+  <footer><span><a href="../publications/">← Publications</a> · Layout inspired by the <a href="https://xingbaji.github.io/PNCG_project_page/">PNCG project page</a>.</span><a href="#main">Back to top ↑</a></footer>
+</body>
+</html>
