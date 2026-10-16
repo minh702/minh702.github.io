@@ -1,6 +1,6 @@
 // Paste a public or unlisted YouTube URL here when ready.
 // Example formats: https://www.youtube.com/watch?v=VIDEO_ID or https://youtu.be/VIDEO_ID
-const resources = { youtube: 'https://www.youtube.com/watch?v=E-jOMLrl_tw', paper: 'assets/sa26conference-ivp_nocc.pdf', code: 'https://github.com/medialab-ku/ImplicitVelocityProjection' };
+const resources = { youtube: 'https://www.youtube.com/watch?v=E-jOMLrl_tw', paper: 'assets/ivp_authorsversion.pdf', code: 'https://github.com/medialab-ku/ImplicitVelocityProjection' };
 for (const name of ['paper', 'code']) {
   if (!resources[name]) continue;
   const link = document.getElementById(`${name}-link`);
